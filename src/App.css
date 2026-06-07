@@ -38,3 +38,49 @@ input:focus, textarea:focus, select:focus {
   outline: none;
   border-color: #0066cc;
 }
+
+/* Task Filter Styles */
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-label {
+  font-size: 0.9em;
+  color: #666;
+  font-weight: 500;
+}
+
+.filter-dropdown {
+  padding: 6px 12px;
+  min-width: 140px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.filter-dropdown:hover {
+  border-color: #999;
+}
+
+.filter-dropdown:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+.filter-dropdown option {
+  padding: 4px 8px;
+}
+
+.filter-dropdown option:hover {
+  background-color: #f0f0f0;
+}
