@@ -15,7 +15,7 @@ describe('TaskForm', () => {
 
   it('should render status options', () => {
     render(<TaskForm task={null} onSubmit={vi.fn()} onCancel={vi.fn()} />);
-    expect(screen.getByDisplayValue('todo')).toBeDefined();
+    expect(screen.getByRole('combobox', { name: /status/i }).value).toBe('todo');
   });
 
   it('should have a create button', () => {
